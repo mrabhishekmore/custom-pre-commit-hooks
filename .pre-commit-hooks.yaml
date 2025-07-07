@@ -1,7 +1,6 @@
 - id: check-sonar-quality-gate
   name: Check SonarQube Quality Gate
-  entry: scripts/sonar_checks.py
-  language: python # Add more if your script needs it
-  additional_dependencies: [requests]
+  entry: python scripts/sonar_checks.py
+  language: system # Add more if your script needs it
   pass_filenames: false
   verbose: true
