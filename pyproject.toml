@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "custom-sonar-hook"
+version = "0.1.0"
+description = "My custom sonar hook"
+dependencies = ["requests"]
+
+[tool.setuptools]
+py-modules = ["sonar_checks", "get_suggestions"]
