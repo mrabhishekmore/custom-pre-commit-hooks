@@ -26,7 +26,7 @@ class SonarQubeCheck:
         print("Starting sonar-scanner analysis...")
         try:
             result = subprocess.run(
-                ["cmd", "/c", "sonar-scanner.bat",
+                ["sonar-scanner.bat",
                 f"-Dsonar.projectKey={self.project_key}",
                 "-Dsonar.sources=.",
                 f"-Dsonar.host.url={self.sonar_host}",
