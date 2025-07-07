@@ -1,6 +1,6 @@
 - id: check-sonar-quality-gate
   name: Check SonarQube Quality Gate
-  entry: python run_sonar.py
+  entry: python -m scripts.sonar_checks.py
   language: system
   pass_filenames: false
   verbose: true
