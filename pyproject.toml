@@ -3,8 +3,8 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "scripts"
+name = "custom-sonar-hook"
 version = "0.1.0"
-description = "Sonar pre-commit hook"
-dependencies = ["requests"]
+description = "Simple sonar pre-commit hook"
+
 
